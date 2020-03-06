@@ -2,7 +2,7 @@ import tkinter as tk
 import random, time
 
 root = tk.Tk()
-root.title('Chance')
+root.title('SimpleChance')
 current_frame = None
 
 status = {
