@@ -10,9 +10,6 @@ status = {
     'loses':0
 }
 
-def calc_trap():
-    return random.randint(1,3)
-
 
 def lose():
     status['loses'] += 1
@@ -60,7 +57,7 @@ def load_frame():
 
     current_frame.grid()
 
-    trap_num = calc_trap()
+    trap_num = random.randint(1, 3)
 
     if trap_num == 1:
         deur_1 = tk.Button(current_frame, text='1', width=10, height=10, command=lose)
